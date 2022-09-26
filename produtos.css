@@ -1,0 +1,114 @@
+header {
+    background-color: #BBBBBB;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.728);
+    padding: 20px 0 ;
+    
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: auto;
+    
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+
+nav li {
+    display: inline; /* para o menu ficar um do lado do outro*/
+    margin: 0 0 0 15px; /*top,direita,abaixo e esquerda*/
+    
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+}
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+.produtos {
+    width: 940px;
+    margin: auto;
+    padding:  50px 0;
+   
+
+
+}
+.produtos li {
+    display: inline-block; /* para ficar uma imagem do lado da outra*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 1.5%;
+    padding: 30px 20 px;
+    box-sizing: border-box; 
+    
+}
+.produtos li:hover {
+    border-color: #c78c19;
+    
+}
+.produtos li:active {
+    border-color: #088c19;
+}
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.produtos li:hover h2 {
+    font-size: 40px;
+}
+.descricao {
+    font-size: 18px;
+    
+
+}
+.preco {
+    font-size: 22 px;
+    font-weight: bold;
+    margin-top :10px ;
+}
+footer {
+    background :url("imagens/bg.jpg");
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 15px;
+    margin: 20px 0 0;
+}
+@media screen and (max-width :480px) {
+    .caixa {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position:static;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    
+    .produtos li {
+        display: block;
+        padding: 20px 20px;
+        margin: 20px 0 20px 20px;
+    }
+   
+    
+    
+}
